@@ -62,7 +62,7 @@ const About = () => {
                 alt="Personal Image"
                 className="img1 "
                 layout="fill"
-                src={"/denver.jpg"}
+                src={"/colorado.jpg"}
               />
 
               <Box
