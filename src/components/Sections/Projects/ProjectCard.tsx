@@ -65,7 +65,7 @@ const ProjectCard = ({
           position: "relative",
         }}
       >
-        <Image alt="Project Image" className="img1 " src={img} />
+        <Image alt="Project Image" layout="fill" className="img1 " src={img} />
       </Box>
       <Box
         ref={ref}
