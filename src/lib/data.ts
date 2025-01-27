@@ -2,12 +2,15 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 // import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+// import corpcommentImg from "@/public/corpcomment.png";
 // import rmtdevImg from "@/public/rmtdev.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 // import awsSol from "@/public/awsSol.png";
 // import awsml from "@/public/awsml.png";
+import { FaAws } from "react-icons/fa";
 
+import { FaJava } from "react-icons/fa";
+import { DiRedis } from "react-icons/di";
 import {
   SiHtml5,
   SiCss3,
@@ -16,19 +19,22 @@ import {
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
-  SiTailwindcss,
   SiMongodb,
-  SiRedux,
   SiGraphql,
   SiDjango,
   SiPostgresql,
   SiPython,
-  SiFramer,
-  SiTensorflow,
   SiDocker,
   SiKubernetes,
   SiJenkins,
   SiTerraform,
+  SiSpringboot,
+  SiGo,
+  SiExpress,
+  SiJunit5,
+  SiApachekafka,
+  SiApacheflink,
+  SiElasticsearch,
 } from "react-icons/si";
 
 export const links = [
@@ -66,112 +72,109 @@ import { SiPytorch, SiSpring } from "react-icons/si";
 
 export const experiencesData = [
   {
-    title: "Software Engineer (AI/ML)",
-    location: "HCA Health Care, Boston, MA",
+    title: "Software Engineer",
+    location: "The Research Foundation for SUNY, Buffalo, NY",
     description:
-      "Engineered backend services using Java Spring Boot and Node.js, deployed machine learning models for patient data analytics, and optimized CI/CD workflows using Jenkins and Docker, resulting in significant performance improvements.",
-    icon: React.createElement(SiPytorch),
+      "Rebuilt an IoT access platform using Golang and transformed it into a cloud-native solution with AWS serverless architecture. Enabled features such as concurrent access and file sharing. Worked extensively on network configuration and implemented cloud migration best practices.",
+    icon: React.createElement(FaAws),
     date: "Aug 2023 - Present",
   },
   {
-    title: "Software Development Engineer",
-    location: "Amazon Web Services, Boston, MA",
+    title: "University at Buffalo",
+    location: "Buffalo, NY",
     description:
-      "Enhanced backend performance by 30%, optimized PostgreSQL database queries, and automated data store tasks using Docker and shell scripting. Leveraged AWS services for scalable solutions.",
-    icon: React.createElement(SiSpring),
-    date: "Aug 2022 - May 2023",
-  },
-  {
-    title: "Western Michigan University",
-    location: "Kalamazoo, MI",
-    description:
-      "I earned a Master's degree in Computer Science with a GPA of 3.42/4.0.",
+      "Pursued a Master’s degree in Computer Science, gaining exposure to brilliant minds and working on Blockchain, Machine Learning, and Cloud Computing.",
     icon: React.createElement(LuGraduationCap),
-    date: "Jan 2021 - Dec 2022",
+    date: "Sept 2022 - Jan 2024",
   },
   {
-    title: "Student IT Assistant",
-    location: "CHHS at WMU, Kalamazoo, MI",
+    title: "Software Engineer",
+    location: "Accenture, Bengaluru, India",
     description:
-      "Developed a web-based asset tracking system using React and Node.js, automated workflows with Python, and implemented a helpdesk solution with Angular and Express.js.",
+      "Developed a production support tool using CQRS and Event Sourcing architecture. Built APIs for microservice communication with Java and Spring Boot and configured MongoDB. Optimized an enterprise-scale application for performance and scalability using Java multithreading and distributed messaging.",
+    icon: React.createElement(SiSpring),
+    date: "Jan 2020 - Aug 2022",
+  },
+
+  {
+    title: "Software Engineer Intern",
+    location: "Krify, Bengaluru, India",
+    description:
+      "Built a full-stack application using Java, Spring Boot, and Hibernate ORM with PostgreSQL integration. Refactored legacy code and decoupled dependencies to optimize performance and enable faster feature integration. Tackled critical production issues while honing skills in test-driven development.",
     icon: React.createElement(CgWorkAlt),
-    date: "Aug 2021 - Jul 2022",
+    date: "Jan 2019 - Dec 2019",
   },
 ] as const;
 
-// export const projectsData = [
-//   {
-//     title: "CorpComment",
-//     description:
-//       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-//     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-//     imageUrl: corpcommentImg,
-//   },
-//   {
-//     title: "rmtDev",
-//     description:
-//       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-//     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-//     imageUrl: rmtdevImg,
-//   },
-//   {
-//     title: "Word Analytics",
-//     description:
-//       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-//     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-//     imageUrl: wordanalyticsImg,
-//   },
-// ] as const;
+export const projectsData = [
+  {
+    title: "Banking using CQRS and Event Sourcing",
+    description:
+      "The project involved developing a banking application using CQRS and Event Sourcing patterns with Java, Spring Boot, and Kafka. The application focused on event handling and command processing to manage transactions, ensuring high consistency and auditability. Designed to handle complex banking operations, the system emphasized real-time updates and event replay during fraud detection or recovery scenarios.",
+    link: "https://github.com/sumanththota/CQRS_EventSourcing",
+    image: "/banking.png",
+  },
+  {
+    title: "Real-Time Data Streaming with Kafka and OpenSearch",
+    description:
+      "The project involved building a real-time data processing pipeline using Kafka and Java to stream high-volume data into OpenSearch for indexing, search, and analytics. The solution focused on eliminating redundant events and ensuring fault tolerance, while transforming data for real-time querying, monitoring, and alerting, ultimately providing actionable insights.",
 
-// export const skillsData = [
-//   // Web Development Skills
-//   { name: "HTML", icon: SiHtml5 },
-//   { name: "CSS", icon: SiCss3 },
-//   { name: "JavaScript", icon: SiJavascript },
-//   { name: "TypeScript", icon: SiTypescript },
-//   { name: "React", icon: SiReact },
-//   { name: "Next.js", icon: SiNextdotjs },
-//   { name: "Node.js", icon: SiNodedotjs },
-//   { name: "Tailwind", icon: SiTailwindcss },
-//   { name: "MongoDB", icon: SiMongodb },
-//   { name: "PostgreSQL", icon: SiPostgresql },
-//   { name: "GraphQL", icon: SiGraphql },
-//   { name: "Redux", icon: SiRedux },
-//   { name: "Django", icon: SiDjango },
-//   { name: "Framer Motion", icon: SiFramer },
+    link: "https://github.com/sumanththota/Kafka-Open-Search-Project",
+    image: "/kafka.jpeg",
+  },
+  {
+    title: " E-Commerce Platform with Microservices Architecture",
+    description:
+      "The project involved creating a scalable e-commerce platform using a microservices architecture to meet essential business needs, such as product management, user authentication, order processing, and inventory management. The platform leveraged Java, Spring Boot, and design patterns, alongside Kubernetes, to grow services independently. Communication was facilitated through RESTful APIs and event-driven messaging with Kafka for efficient service interaction. ",
 
-//   // Machine Learning Technologies
-//   { name: "Python", icon: SiPython },
-//   { name: "TensorFlow", icon: SiTensorflow },
-//   { name: "PyTorch", icon: SiPytorch },
+    link: "https://github.com/sumanththota/eCommerce",
+    image: "/microservices.png",
+  },
+  {
+    title: "CRM System with django",
+    description:
+      "This CRM application was built using Python, Django, and PostgreSQL, focusing on business requirements such as authentication, user data creation, and customer relationship management. The project leverages the power of rapid development with the Django framework, while also providing a deeper understanding of the underlying components for faster iterations.",
 
-//   // CI/CD and DevOps
-//   { name: "Docker", icon: SiDocker },
-//   { name: "Kubernetes", icon: SiKubernetes },
-//   { name: "Jenkins", icon: SiJenkins },
-//   { name: "Terraform", icon: SiTerraform },
+    link: "https://github.com/sumanththota/Django-CRM-",
+    image: "/crm.png",
+  },
+] as const;
 
-//   // Cloud and AWS
-//   // { name: "AWS", icon: SiAws },
-//   // { name: "AWS Solution Architect Associate", icon: SiAws },
-//   // { name: "AWS Machine Learning Engineer Associate", icon: SiAws },
-// ] as const;
+export const skillsData = [
+  // Web Development Skills
+  // Backend Development
+  { name: "Java", icon: FaJava },
+  { name: "Spring Boot", icon: SiSpringboot },
+  { name: "Go", icon: SiGo },
+  { name: "Python", icon: SiPython },
+  { name: "Django", icon: SiDjango },
 
-// export const certificationsData = [
-//   {
-//     id: "4b0fbf81-c412-473b-9b15-45c2a43cc125",
-//     title: "AWS Certified Solutions Architect – Associate",
-//     issueDate: "November 2, 2024",
-//     expirationDate: "November 2, 2027",
-//     link: "https://www.credly.com/badges/4b0fbf81-c412-473b-9b15-45c2a43cc125",
-//     imageUrl: awsSol,
-//   },
-//   {
-//     id: "e5908fdb-0c1f-4849-9679-2387af6eaaae",
-//     title: "AWS Certified Machine Learning – Specialty",
-//     issueDate: "October 27, 2024",
-//     expirationDate: "October 27, 2027",
-//     link: "https://www.credly.com/badges/e5908fdb-0c1f-4849-9679-2387af6eaaae",
-//     imageUrl: awsml,
-//   },
-// ];
+  { name: "JUnit 5", icon: SiJunit5 },
+  { name: "Kafka", icon: SiApachekafka },
+  { name: "ELK Stack", icon: SiElasticsearch },
+
+  // Frontend Development
+  { name: "HTML", icon: SiHtml5 },
+  { name: "CSS", icon: SiCss3 },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "React", icon: SiReact },
+  { name: "Next.js", icon: SiNextdotjs },
+  { name: "Node.js", icon: SiNodedotjs },
+  { name: "Express.js", icon: SiExpress },
+
+  // Database and Query Languages
+  { name: "MongoDB", icon: SiMongodb },
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "Redis", icon: DiRedis },
+  { name: "GraphQL", icon: SiGraphql },
+
+  // Frameworks and Platforms
+
+  // CI/CD and DevOps
+
+  { name: "AWS", icon: FaAws },
+  { name: "Docker", icon: SiDocker },
+  { name: "Kubernetes", icon: SiKubernetes },
+  { name: "Jenkins", icon: SiJenkins },
+  { name: "Terraform", icon: SiTerraform },
+] as const;

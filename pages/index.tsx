@@ -1,23 +1,26 @@
-import { Box } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import type { NextPage } from "next";
-import Experience from "../src/components/Sections/TechTools/TechTools";
+
 import Hero from "../src/components/Sections/Hero/Hero";
+import Skills from "../src/components/Sections/Skills/Skills";
 import Perks from "../src/components/Sections/Perks/Perks";
 import Projects from "../src/components/Sections/Projects/Projects";
-import CTA from "../src/components/Sections/CallToAction/CTA";
+
 import { useEffect, useRef } from "react";
 import CursorAnimation from "../src/gsap/CursorAnimation";
 import About from "../src/components/Sections/About/About";
 import Layout from "../Layout/Layout";
+import { projectsData } from "../src/lib/data";
+import Timeline from "../src/components/Sections/Timeline/Timeline";
 
-const Home: NextPage = ({ projectsArray, iconsArray }: any) => {
-  const ball = useRef();
+const Home: NextPage = ({ iconsArray }: any) => {
+  // const ball = useRef();
 
-  useEffect(() => {
-    if (ball && ball.current) {
-      CursorAnimation(ball.current);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (ball && ball.current) {
+  //     CursorAnimation(ball.current);
+  //   }
+  // }, []);
   return (
     <Layout
       desc={`Sumanth, A  professional software engineer, Can develop all kinds of websites applications according to your needs`}
@@ -30,21 +33,22 @@ const Home: NextPage = ({ projectsArray, iconsArray }: any) => {
         }}
       >
         <Hero />
-        <Perks />
-        <Experience iconsArray={iconsArray} />
-        <Projects projectsArray={projectsArray} />
+
+        <Skills />
+
+        <Projects />
+        <Timeline />
         <About />
-        <CTA />
 
         <Box
-          ref={ball}
+          // ref={ball}
           sx={{
             display: {
               xs: "none",
               md: "block",
             },
           }}
-          className="ball"
+          // className="ball"
         ></Box>
       </Box>
     </Layout>

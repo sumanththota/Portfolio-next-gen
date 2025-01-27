@@ -4,6 +4,7 @@ import {
   Container,
   Grid,
   Tooltip,
+  Divider,
   Typography,
 } from "@mui/material";
 import gsap from "gsap";
@@ -11,6 +12,7 @@ import { useRef, useEffect } from "react";
 import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import HeroSectionAnimation from "../../../gsap/HeroSectionAnimation";
 import Image from "next/image";
+import Socials from "../Socials/Socials";
 
 export const btnStyles = {
   padding: ".77em 1.5em",
@@ -26,223 +28,229 @@ const Hero = () => {
   }, []);
 
   return (
-    <Container
-      id="hero"
-      maxWidth="lg"
-      sx={{
-        margin: "0 auto",
-        py: {
-          xs: "7.5em",
-          sm: "8.5em",
-        },
-      }}
-    >
-      <Grid
-        container
+    <>
+      <Container
+        id="hero"
+        maxWidth="lg"
         sx={{
-          justifyContent: "space-between",
+          margin: "0 auto",
+          py: {
+            xs: "7.5em",
+            sm: "8.5em",
+          },
         }}
       >
-        <Grid item xs={12} sm={10} md={8} lg={7}>
-          <Box ref={ref}>
-            <Typography
-              className="t1"
-              variant="h1"
-              sx={{
-                fontSize: {
-                  xs: "2.4em",
-                  sm: "3.4em",
-                  md: "3.8em",
-                },
-                textAlign: "left",
-                transform: "translateY(40px)",
-                opacity: 0,
-                pt: "1em",
-                fontWeight: "600",
-              }}
-            >
-              Hi, I'm Sumanth
-            </Typography>
-            <Typography
-              variant="h2"
-              className="secondary t2 t25o0"
-              sx={{
-                textAlign: "left",
-                pt: "1.5em",
-                fontSize: {
-                  xs: ".9em",
-                  sm: "1em",
-                },
-                maxWidth: "570px",
-                fontWeight: "300",
-              }}
-            >
-              A Software Engineer on a Journey to Harness the Power of Cloud and
-              AI for Next-Gen Backend Solutions.
-            </Typography>
-
-            <Box
-              sx={{
-                my: "2.5em",
-                gap: ".8em",
-                display: "flex",
-                flexWrap: "wrap",
-                alignItems: "center",
-              }}
-            >
-              <Button
-                className="  b1 explore offset "
+        <Grid
+          container
+          sx={{
+            justifyContent: "space-between",
+          }}
+        >
+          <Grid item xs={12} sm={10} md={8} lg={7}>
+            <Box ref={ref}>
+              <Typography
+                className="t1"
+                variant="h1"
                 sx={{
+                  fontSize: {
+                    xs: "2.4em",
+                    sm: "3.4em",
+                    md: "3.8em",
+                  },
+                  textAlign: "left",
+                  transform: "translateY(40px)",
                   opacity: 0,
-                  borderRadius: 0,
-                  padding: ".75em 2.5em",
-                  flex: { xs: 1, sm: "inherit" },
+                  pt: "1em",
+                  fontWeight: "600",
                 }}
-                onClick={() =>
-                  gsap.to(window, {
-                    duration: 2,
-                    scrollTo: `#ProjectSection`,
-                  })
-                }
               >
-                View Projects
-              </Button>
-              <a
-                href={`https://drive.google.com/drive/u/0/my-drive`}
-                rel="noreferrer"
-                target="_blank"
+                Hi, I'm Sumanth
+              </Typography>
+              <Typography
+                variant="h2"
+                className="secondary t2 t25o0"
+                sx={{
+                  textAlign: "left",
+                  pt: "1.5em",
+                  fontSize: {
+                    xs: ".9em",
+                    sm: "1em",
+                  },
+                  maxWidth: "570px",
+                  fontWeight: "300",
+                }}
+              >
+                A Software Engineer on a Journey to Harness the Power of Cloud
+                and AI for Next-Gen Backend Solutions.
+              </Typography>
+
+              <Box
+                sx={{
+                  my: "2.5em",
+                  gap: ".8em",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "center",
+                }}
               >
                 <Button
-                  className="b2"
+                  className="  b1 explore offset "
                   sx={{
-                    ...btnStyles,
                     opacity: 0,
-                    height: "max-content",
-                    padding: "1em 1.5em",
-                    width: { xs: "100%", sm: "auto" },
-                    ":hover": {
-                      color: "#0092ff",
-                    },
+                    borderRadius: 0,
+                    padding: ".75em 2.5em",
+                    flex: { xs: 1, sm: "inherit" },
                   }}
-                  variant="text"
+                  onClick={() =>
+                    gsap.to(window, {
+                      duration: 2,
+                      scrollTo: `#ProjectSection`,
+                    })
+                  }
                 >
-                  <Typography fontSize="14px">View Resume</Typography>
+                  View Projects
                 </Button>
-              </a>
+                <a
+                  href={"/Sumanth_Thota_Resume.pdf"}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <Button
+                    className="b2"
+                    sx={{
+                      ...btnStyles,
+                      opacity: 0,
+                      height: "max-content",
+                      padding: "1em 1.5em",
+                      width: { xs: "100%", sm: "auto" },
+                      ":hover": {
+                        color: "#0092ff",
+                      },
+                    }}
+                    variant="text"
+                  >
+                    <Typography fontSize="14px">View Resume</Typography>
+                  </Button>
+                </a>
+              </Box>
+              <Socials />
             </Box>
-          </Box>
-        </Grid>
-        <Grid
-          sx={{
-            mb: {
-              xs: "3.5em",
-              sm: "4em",
-              lg: "1em",
-            },
-            mr: {
-              sm: "1em",
-              md: "2em",
-              lg: "0em",
-            },
-            display: "flex",
-            alignItems: "baseline",
-            justifyContent: "flex-end",
-          }}
-          item
-          xs={12}
-          sm={12}
-          md={12}
-          lg={5}
-        >
-          <Box
+          </Grid>
+          <Grid
             sx={{
-              borderRadius: "6px",
-              width: {
-                xs: "100%",
-                sm: "350px",
-                md: "400px",
+              mb: {
+                xs: "3.5em",
+                sm: "4em",
+                lg: "1em",
               },
+              mr: {
+                sm: "1em",
+                md: "2em",
+                lg: "0em",
+              },
+              display: "flex",
+              alignItems: "baseline",
+              justifyContent: "flex-end",
             }}
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={5}
           >
             <Box
-              className="mainBox"
               sx={{
-                opacity: 0,
-                display: "flex",
-                flexDirection: "column",
-                position: "relative",
-                height: "460px",
-                boxShadow: {
-                  xs: ".5em 3em 0 #313131 ",
-                  sm: "2em 3em 0px #313131",
+                borderRadius: "6px",
+                width: {
+                  xs: "100%",
+                  sm: "350px",
+                  md: "400px",
                 },
               }}
             >
-              <Image
-                layout="fill"
-                style={{
-                  opacity: 0,
-                  borderRadius: "6px",
-                  zIndex: "2",
-                }}
-                className="img1"
-                src="/Picture.jpeg"
-                alt="Personal Image"
-              />
               <Box
-                className="gradientBg"
+                className="mainBox"
                 sx={{
-                  width: "100px",
-                  height: "100px",
-                  zIndex: "0",
-                  position: "absolute",
-                  right: {
-                    xs: "-1%",
-                    sm: "-5%",
-                  },
                   opacity: 0,
-                  bottom: "-5%",
-                  background: "transparent",
-                  backgroundImage: "radial-gradient(white 2px, transparent 0)",
-                  backgroundSize: "15px 13px",
-                }}
-              ></Box>
-              <Box
-                className="quoteBox"
-                sx={{
-                  zIndex: "2",
-                  position: "absolute",
-                  bottom: {
-                    xs: "0%",
-                    lg: "-5%",
+                  display: "flex",
+                  flexDirection: "column",
+                  position: "relative",
+                  height: "460px",
+                  boxShadow: {
+                    xs: ".5em 3em 0 #313131 ",
+                    sm: "2em 3em 0px #313131",
                   },
-                  width: "100%",
-                  right: {
-                    sm: "25%",
-                  },
-                  top: "105%",
-                  overflow: "hidden",
-                  opacity: 0,
-                  background: "#0092ff",
                 }}
               >
-                <Typography
+                <Image
+                  layout="fill"
+                  style={{
+                    opacity: 0,
+                    borderRadius: "6px",
+                    zIndex: "2",
+                  }}
+                  className="img1"
+                  src="/Picture.jpeg"
+                  alt="Personal Image"
+                />
+                <Box
+                  className="gradientBg"
                   sx={{
-                    fontWeight: "300",
-                    fontSize: ".85em",
-                    padding: "1em",
+                    width: "100px",
+                    height: "100px",
+                    zIndex: "0",
+                    position: "absolute",
+                    right: {
+                      xs: "-1%",
+                      sm: "-5%",
+                    },
+                    opacity: 0,
+                    bottom: "-5%",
+                    background: "transparent",
+                    backgroundImage:
+                      "radial-gradient(white 2px, transparent 0)",
+                    backgroundSize: "15px 13px",
+                  }}
+                ></Box>
+                <Box
+                  className="quoteBox"
+                  sx={{
+                    zIndex: "2",
+                    position: "absolute",
+                    bottom: {
+                      xs: "0%",
+                      lg: "-5%",
+                    },
+                    width: "100%",
+                    right: {
+                      sm: "25%",
+                    },
+                    top: "105%",
+                    overflow: "hidden",
+                    opacity: 0,
+                    background: "#0092ff",
                   }}
                 >
-                  {`"When something is important enough, you do it even if the odds are not in your favor."
-
-– Elon Musk`}
-                </Typography>
+                  <Typography
+                    sx={{
+                      fontWeight: "300",
+                      fontSize: ".85em",
+                      padding: "1em",
+                    }}
+                  >
+                    {`"When something is important enough, you do it even if the odds are not in your favor."`}
+                    <br />
+                    <span style={{ textAlign: "right", display: "block" }}>
+                      {`– Elon Musk`}
+                    </span>
+                  </Typography>
+                </Box>
               </Box>
             </Box>
-          </Box>
+          </Grid>
         </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </>
   );
 };
 

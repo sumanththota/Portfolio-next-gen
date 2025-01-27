@@ -7,6 +7,7 @@ import MainTitleAnimation from "../../../gsap/MainTitleAnimation";
 import HandymanIcon from "@mui/icons-material/Handyman";
 import HttpIcon from "@mui/icons-material/Http";
 import DevicesIcon from "@mui/icons-material/Devices";
+import Timeline from "../Timeline/Timeline";
 
 export const centeredStyles = {
   alignItems: "center",
@@ -51,7 +52,7 @@ const Perks = () => {
           my: "4em",
         }}
       >
-        <Box sx={centeredStyles}>
+        {/* <Box sx={centeredStyles}>
           <Typography
             className="h1 t25o0"
             variant="h1"
@@ -82,21 +83,21 @@ const Perks = () => {
           >
             Customer satisfaction comes first, and in order to do that I decided
             to pickup skills and principles to provide quality service.
-          </Typography>
+          </Typography> */}
 
-          <Box
-            sx={{
-              mt: "3em",
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "5%",
-              justifyContent: {
-                xs: "center",
-                sm: "space-between",
-              },
-            }}
-          >
-            {perksArray.map((perk) => {
+        <Box
+          sx={{
+            mt: "3em",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "5%",
+            justifyContent: {
+              xs: "center",
+              sm: "space-between",
+            },
+          }}
+        >
+          {/* {perksArray.map((perk) => {
               return (
                 <PerkCard
                   key={perk.title}
@@ -105,8 +106,7 @@ const Perks = () => {
                   Icon={perk.Icon}
                 />
               );
-            })}
-          </Box>
+            })} */}
         </Box>
       </Container>{" "}
       <Divider />{" "}

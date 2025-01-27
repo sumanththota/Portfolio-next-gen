@@ -1,30 +1,31 @@
-import { AppBar, Typography, Button, IconButton } from "@mui/material";
+import { AppBar, Typography, Button, IconButton, Box } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import { useContext } from "react";
-import HomeIcon from "@mui/icons-material/Home";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { INavbar } from "../../Types/Types";
 import { ColorModeContext } from "../../../pages/_app";
 import Logo from "../Logo/Logo";
-import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
-import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+import DownhillSkiingIcon from "@mui/icons-material/DownhillSkiing";
+import FilterHdrIcon from "@mui/icons-material/FilterHdr";
+import HikingIcon from "@mui/icons-material/Hiking";
 import { useRouter } from "next/router";
+import Socials from "../Sections/Socials/Socials";
 
 export const Links = [
   {
     text: "Home",
-    Icon: HomeIcon,
+    Icon: FilterHdrIcon,
     url: "/",
   },
   {
-    text: "Contact",
-    Icon: ConnectWithoutContactIcon,
-    url: "/contact",
+    text: "About Me",
+    Icon: DownhillSkiingIcon,
+    url: "/",
   },
   {
     text: "Projects",
-    Icon: AssignmentTurnedInIcon,
+    Icon: HikingIcon,
     url: "/",
   },
   {
@@ -66,23 +67,25 @@ const Navbar = ({ toggleDrawer, navbarSx }: INavbar) => {
                 onClick={()=>router.push('/blog')}
                 sx={{mr:'1em',fontWeight:'500',':hover':{color:'#0092ff'},color:color}}>
                 </Button> */}
-        <IconButton
-          sx={{
-            color,
-            ":hover": {
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <IconButton
+            sx={{
               color,
-            },
-            ":focus": {
-              color,
-            },
-          }}
-          onClick={() => toggleDrawer()}
-          size="large"
-          edge="start"
-          aria-label="menu"
-        >
-          <MenuIcon />
-        </IconButton>
+              ":hover": {
+                color,
+              },
+              ":focus": {
+                color,
+              },
+            }}
+            onClick={() => toggleDrawer()}
+            size="large"
+            edge="start"
+            aria-label="menu"
+          >
+            <MenuIcon />
+          </IconButton>
+        </Box>
       </Container>
     </AppBar>
   );

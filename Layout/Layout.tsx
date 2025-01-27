@@ -17,10 +17,7 @@ const Layout = ({ navbarSx, title, children, desc }: ILayout) => {
       <Head>
         <title>{title || "Sumanth Personal Portfolio"}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        {/* <link
-          rel="shortcut icon"
-          href="https://res.cloudinary.com/dwcu3wcol/image/upload/v1657099811/log_nkmcys.jpg"
-        /> */}
+        <link rel="shortcut icon" href="/rocket.png" />
 
         <meta
           name="description"
