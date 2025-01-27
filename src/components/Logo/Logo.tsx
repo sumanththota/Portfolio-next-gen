@@ -25,11 +25,11 @@ const Logo = ({ toggleDrawer, colorMode, color }: any) => {
         alignItems: "center",
       }}
     >
-      <img
+      {/* <img
         className={`${colorMode.mode === "dark" ? "logoImg " : ""}small`}
         // src="https://res.cloudinary.com/dwcu3wcol/image/upload/v1658929513/log-removebg-preview_fygpsd.png"
         alt=""
-      />
+      /> */}
       <CustomLink color={color} fontWeight="600" text="Sumanth" href="/" />
     </Box>
   );

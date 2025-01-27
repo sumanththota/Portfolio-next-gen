@@ -15,7 +15,7 @@ const About = () => {
   gsap.registerPlugin(ScrollToPlugin);
   useEffect(() => {
     HeroSectionAnimation(q);
-  }, []);
+  }, [q]);
   const colorMode = useContext(ColorModeContext);
   return (
     <>

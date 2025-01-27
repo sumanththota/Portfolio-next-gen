@@ -25,7 +25,7 @@ const Hero = () => {
   gsap.registerPlugin(ScrollToPlugin);
   useEffect(() => {
     HeroSectionAnimation(q);
-  }, []);
+  }, [q]);
 
   return (
     <>
@@ -64,7 +64,7 @@ const Hero = () => {
                   fontWeight: "600",
                 }}
               >
-                Hi, I'm Sumanth
+                Hi, I&apos;m Sumanth
               </Typography>
               <Typography
                 variant="h2"

@@ -76,6 +76,7 @@ const Projects = () => {
               projectsData.map((project: any, index: number) => {
                 return (
                   <ProjectCard
+                    key={index}
                     isReversed={index % 2 === 0 ? true : false}
                     img={project.image}
                     className={`p${index}`}
