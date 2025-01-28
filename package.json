@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://sumanththota.github.io/sumanththota.github.io",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -34,6 +35,7 @@
     "@types/react-vertical-timeline-component": "^3.3.6",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2",
+    "gh-pages": "^6.3.0",
     "typescript": "4.7.4"
   }
 }
