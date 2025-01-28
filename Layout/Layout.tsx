@@ -39,10 +39,7 @@ const Layout = ({ navbarSx, title, children, desc }: ILayout) => {
           content="Sumanth |  And this is my Portfolio and my blog "
         />
 
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/dwcu3wcol/image/upload/v1658929513/log-removebg-preview_fygpsd.png"
-        />
+        <meta property="og:image" content="/rocket.png" />
 
         {/* <!-- Og Type -->
 <meta property="og:type" content="article" /> */}
