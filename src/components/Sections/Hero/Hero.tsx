@@ -81,7 +81,7 @@ const Hero = () => {
                 }}
               >
                 A Software Engineer on a Journey to Harness the Power of Cloud
-                and AI for Next-Gen Digital Ecoystems.
+                and AI for Next-Gen Digital Ecosystems.
               </Typography>
 
               <Box
