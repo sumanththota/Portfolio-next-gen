@@ -29,7 +29,7 @@ const Layout = ({ navbarSx, title, children, desc }: ILayout) => {
 
         <meta
           property="og:title"
-          content="Sumanth Personal Portfolio | Lebanese Web Developer"
+          content="Sumanth Personal Portfolio | Software Developer"
         />
 
         {/* <meta property="og:url" content="https://elvito.netlify.app" /> */}

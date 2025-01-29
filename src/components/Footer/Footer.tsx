@@ -19,12 +19,12 @@ function Copyright() {
         <Socials />
         <Typography
           variant="h1"
-          fontSize="1em"
+          fontSize="0.7em"
           sx={{
             marginTop: "2em", // Add space after Socials
           }}
         >
-          {"Designed by Vito Medlej | Revised by Sumanth Thota "}
+          {"Revised by Sumanth Thota "}
           <Link
             color="inherit"
             target="_blank"
