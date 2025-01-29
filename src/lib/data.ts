@@ -136,7 +136,7 @@ export const projectsData = [
       "This CRM application was built using Python, Django, and PostgreSQL, focusing on business requirements such as authentication, user data creation, and customer relationship management. The project leverages the power of rapid development with the Django framework, while also providing a deeper understanding of the underlying components for faster iterations.",
 
     link: "https://github.com/sumanththota/Django-CRM-",
-    image: "/crm.png",
+    image: "/CRM.png",
   },
 ] as const;
 
