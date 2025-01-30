@@ -108,19 +108,19 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Banking using CQRS and Event Sourcing",
-    description:
-      "The project involved developing a banking application using CQRS and Event Sourcing patterns with Java, Spring Boot, and Kafka. The application focused on event handling and command processing to manage transactions, ensuring high consistency and auditability. Designed to handle complex banking operations, the system emphasized real-time updates and event replay during fraud detection or recovery scenarios.",
-    link: "https://github.com/sumanththota/CQRS_EventSourcing",
-    image: "/banking.png",
-  },
-  {
     title: "Real-Time Data Streaming with Kafka and OpenSearch",
     description:
       "The project involved building a real-time data processing pipeline using Kafka and Java to stream high-volume data into OpenSearch for indexing, search, and analytics. The solution focused on eliminating redundant events and ensuring fault tolerance, while transforming data for real-time querying, monitoring, and alerting, ultimately providing actionable insights.",
 
     link: "https://github.com/sumanththota/Kafka-Open-Search-Project",
-    image: "/kafka.jpeg",
+    image: "/kafka.png",
+  },
+  {
+    title: "Banking using CQRS and Event Sourcing",
+    description:
+      "The project involved developing a banking application using CQRS and Event Sourcing patterns with Java, Spring Boot, and Kafka. The application focused on event handling and command processing to manage transactions, ensuring high consistency and auditability. Designed to handle complex banking operations, the system emphasized real-time updates and event replay during fraud detection or recovery scenarios.",
+    link: "https://github.com/sumanththota/CQRS_EventSourcing",
+    image: "/banking.png",
   },
   {
     title: " E-Commerce Platform with Microservices Architecture",

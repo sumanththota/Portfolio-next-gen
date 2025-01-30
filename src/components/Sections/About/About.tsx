@@ -83,7 +83,7 @@ const About = () => {
                   backgroundSize: "15px 13px",
                 }}
               ></Box>
-              <Box
+              {/* <Box
                 className="quoteBoxBottom"
                 style={{
                   opacity: 1,
@@ -114,7 +114,7 @@ const About = () => {
                 >
                   {"Buffalo Mountain, Colorado - ^13,000 ft"}
                 </Typography>
-              </Box>
+              </Box> */}
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={7.5} lg={7}>
@@ -139,7 +139,7 @@ const About = () => {
                 }}
                 fontWeight="600"
               >
-                About Me, Im Sumanth Thota
+                About Me, I&apos;m Sumanth Thota
               </Typography>
               <Typography
                 variant="h2"
@@ -167,15 +167,15 @@ const About = () => {
                 pb: ".5em",
               }}
             >
-              Being self-taught has given me a deep appreciation for the work
-              and dedication of engineers and scientists; Business and
-              technology are both my passions.
+              Being self-taught has given me a deep appreciation for the
+              dedication of engineers and scientists. I&apos;m obsessed with
+              technology and committed to building high-performance,
+              fault-tolerant services.
             </Typography>
             <ReadMore>
               I enjoy running, hitting the gym, and following space exploration.
-              Climbing and Backpacking is one of my favorite things to do which
-              keeps my spirits high. Attending Psytrance Music Festivals once a
-              year is must.
+              I Climb and Backpack into the woods often and enjoy Psytrance
+              Music.
             </ReadMore>
           </Grid>
         </Grid>

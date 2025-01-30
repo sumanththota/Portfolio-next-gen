@@ -19,13 +19,13 @@ export const Links = [
     url: "/",
   },
   {
-    text: "About Me",
-    Icon: DownhillSkiingIcon,
+    text: "Projects",
+    Icon: HikingIcon,
     url: "/",
   },
   {
-    text: "Projects",
-    Icon: HikingIcon,
+    text: "About Me",
+    Icon: DownhillSkiingIcon,
     url: "/",
   },
   {

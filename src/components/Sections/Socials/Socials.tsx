@@ -8,11 +8,6 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const socials = [
   {
-    name: "X",
-    icon: FaXTwitter,
-    link: "https://twitter.com/sum12speak",
-  },
-  {
     name: "LinkedIn",
     icon: FaLinkedin,
     link: "https://linkedin.com/in/sumanththota",
@@ -22,6 +17,11 @@ const socials = [
     name: "LeetCode",
     icon: SiLeetcode,
     link: "https://leetcode.com/sumanththota",
+  },
+  {
+    name: "X",
+    icon: FaXTwitter,
+    link: "https://twitter.com/sum12speak",
   },
   {
     name: "Instagram",

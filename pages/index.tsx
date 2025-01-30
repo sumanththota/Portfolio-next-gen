@@ -37,7 +37,7 @@ const Home: NextPage = ({ iconsArray }: any) => {
         <Skills />
 
         <Projects />
-        <Timeline />
+        {/* <Timeline /> */}
         <About />
 
         <Box
